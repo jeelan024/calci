@@ -1,0 +1,110 @@
+import sys
+
+date=int(input("Enter Date:"))
+if 1<=date<=31:
+    
+ print(" ")
+
+else:
+    sys_exit()
+
+i=(date)%7
+  
+month=(input("Enter Month:"))
+if month=='Jan':
+    b=0
+    
+    print(" ")
+    
+elif month=='Feb':
+    b=0
+    
+    print(" ")
+    
+elif month=='Mar':
+    b=3
+    
+    print(" ")
+    
+elif month=='Apr':
+    b=2
+    
+    print(" ")
+    
+elif month=='May':
+    b=3
+    
+    print(" ")
+    
+elif month=='Jun':
+    b=2
+    
+    print(" ")
+    
+elif month=='Jul':
+    b=3
+    
+    print(" ")
+    
+elif month=='Aug':
+    b=3
+    
+    print(" ")
+    
+elif month=='Sep':
+    b=2
+    
+    print(" ")
+elif month=='Oct':
+    b=3
+    
+    print(" ")
+elif month=='Nov':
+    b=2
+    
+    print(" ")
+elif month=='Dec':
+    b=3
+    
+    print(" ")
+else:
+    sys_exit()
+
+year=int(input('Enter Year:'))
+
+if 2000<=year<=2099:
+    if year%4==0:
+        b=0
+    else:
+        b=1
+    print(" ")
+else:
+    sys_exit()
+    
+
+
+j=(year-2000)
+h=(j-1)//4
+t=h+(j-1)
+y=t%7
+     
+
+g=(y+b+i)
+a=g%7
+print(" ")
+
+    
+if a==4:
+ print("The Day is Tuesday")
+elif a==3:
+ print("The Day is Saturday")
+elif a==5:
+ print("The Day is Friday")
+elif a==6:
+ print("That Day is Wednesday")
+elif a==2:
+ print("Thay Day is Thursday")
+elif a==7:
+ print("That Day is Sunday")
+elif a==1:
+ print("That Day is Monday")
